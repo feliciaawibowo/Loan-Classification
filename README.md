@@ -15,27 +15,46 @@ Dropped irrelevant columns, adjusted **Income** to monthly, replaced invalid **C
 ## Model Architecture
 ### Baseline Model
 Hidden Layers: 
+
   Two fully connected layers with:
+  
     Units: 2 * n_input
+    
     Activation: ReLU
+    
 Output Layer:
+
   Units: 2 (binary classification, one-hot encoded target)
+  
   Activation: Sigmoid
+  
 Loss Function: Binary Crossentropy
+
 Optimizer: Adam
+
 Metrics: Accuracy
 
 ### Modified Model
 Hidden Layers:
+
   Two fully connected layers with:
+  
     Units: 2 * n_input
+    
     Activation: ReLU
+    
     Dropout: 0.2 added after each hidden layer
+    
 Output Layer:
+
   Units: 2 (binary classification, one-hot encoded target)
+  
   Activation: Sigmoid
+  
 Loss Function: Binary Crossentropy
+
 Optimizer: Adam
+
 Metrics: Accuracy
 
 ## Evaluation Metrics
